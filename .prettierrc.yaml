@@ -1,0 +1,6 @@
+overrides:
+  - files: "test/**/*.ts"
+    options:
+      printWidth: 200
+plugins:
+  - prettier-plugin-solidity

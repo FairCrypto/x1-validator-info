@@ -1,0 +1,7 @@
+{
+  "spec": "test/**/*.ts",
+  "require": "ts-node/register",
+  "timeout": 30000,
+  "watch-files": ["contracts/**/*.sol", "test/**/*.ts"],
+  "file": ["./test/_setup.ts"]
+}
