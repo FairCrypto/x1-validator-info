@@ -1,0 +1,10 @@
+name: Linting
+
+runs:
+  using: composite
+  steps:
+    - name: Run linters
+      uses: wearerequired/lint-action@v2
+      with:
+        eslint: false
+        prettier: true
