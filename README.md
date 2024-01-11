@@ -42,9 +42,7 @@ Then host the file somewhere, so it is publicly accessible! Ex: https://x1-testn
 
 #### From the Explorer
 
-Visit the ValidatorInfo contract in the explorer and call the `updateInfo` function with your config file URL.
-
-https://explorer.x1-testnet.xen.network/address/0x891416e8bDB4437d4D0D303781A3828262220581/write-proxy#address-tabs
+Visit the [ValidatorInfo](https://explorer.x1-testnet.xen.network/address/0x891416e8bDB4437d4D0D303781A3828262220581/write-proxy#address-tabs) contract in the explorer and call the `updateInfo` function with your config file URL.
 
 ![images/updateInfo.png](images/updateInfo.png)
 
@@ -74,9 +72,9 @@ Click `Write` and use your Validator wallet to sign the transaction.
    // e.g.: validatorInfoContract.updateInfo("https://x1-testnet-genesis.s3.amazonaws.com/xencrypto1.json", { from: "0xa4ddde0afdaea05a3d5a2ec6b5c7f3fc9945020b" })
    ```
 
-### Development
+## Development
 
-## Deploy Contract
+### Deploy Contract
 
 The initial deployment of the contract is done using the `create` script.
 
@@ -91,7 +89,7 @@ export VALIDATOR_INFO_ADDRESS=0x891416e8bDB4437d4D0D303781A3828262220581
 npx hardhat run scripts/upgrade.ts --network x1-testnet
 ```
 
-## Verify Contract
+### Verify Contract
 
 ```shell
 export VALIDATOR_INFO_ADDRESS=0x891416e8bDB4437d4D0D303781A3828262220581
